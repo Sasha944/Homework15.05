@@ -10,10 +10,11 @@
 <body>
 <script>
     var array=[];
+    var o={};
     for(;;){
-        var o={};
-        o["Property"]=prompt("Назва властивості");
-        o["Value"]=prompt("Значення");
+        var a=prompt("Назва властивості");
+        var b=prompt("Значення");
+        o[a] = b;
         array.push(o);
             var c = confirm("Чи бажаєте ви продовжити?");
 
@@ -24,10 +25,11 @@
             }
     }
 
-    for(var i=0;i<array.length;i++){
-        var j =array[i];
-        console.log(j["Property"]+"="+j["Value"])
+    for (var key in o) {
+        console.log(key  + "="+o[key]);
     }
+
+    
 </script>
 </body>
 </html>
