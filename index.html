@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+
+<script>
+    var data=[];
+for(var i=0;i<5;i++){
+    var fname = prompt("Назвіть буль-ласка фірму свого автомобіля");
+    var mname = prompt("Назвіть буль-ласка модель свого автомобіля");
+    var edisp = prompt("Вкажіть об'єм двигуна свого автомобіля");
+    var o ={
+        FirmName: fname,
+        ModelName: mname,
+        EngineDisplacement: edisp
+    };
+
+      data.push(o);
+}
+    for(var j= 0;j<data.length;++j){
+        if(data[j]["EngineDisplacement"]>=2.0){
+            console.log(data[j]["FirmName"]+" "+data[j]["ModelName"]);
+        }
+    }
+</script>
+</body>
+</html>
